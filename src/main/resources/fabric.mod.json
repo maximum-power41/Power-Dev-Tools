@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "power-dev-tools",
+  "version": "${version}",
+  "name": "Power-Dev-Tools",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/giuli/Power-Dev-Tools"
+  },
+  "license": "MIT",
+  "icon": "assets/power-dev-tools/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "dev.power.powerdevtools.client.Power_Dev_ToolsClient"
+    ],
+    "main": [
+      "dev.power.powerdevtools.Power_Dev_Tools"
+    ]
+  },
+  "mixins": [
+    "power-dev-tools.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
